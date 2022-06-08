@@ -1,8 +1,7 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
-    import sys
-    add = 0
-    number = len(sys.argv)
-    for solution in range(1, number):
-        add += int(sys.argv[solution])
-    print(add)
+from sys import argv
+if __name__ == '__main__':
+    numarg = 0
+    for num in argv[1:]:
+        numarg = numarg + int(num)
+    print(numarg)
